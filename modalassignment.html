@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Bootstrap Example</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="bootstrap4/css/bootstrap.css">
+ <script src="jquery2/jquery.min.js"></script>
+ <script src="bootstrap4/js/bootstrap.bundle.min.js"></script>
+ <style>
+    .modal-content{
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 4%;
+        box-shadow: inset 0px 0px 20px 0px;
+    }
+    .btn-default{
+        background-color: white;
+    }
+ </style>
+</head>
+<body>
+        <div class="container">
+         <h1>Registration Form</h1>
+         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click here</button>
+         <div class="modal fade" id="myModal" role="dialog">
+         <div class="modal-dialog">
+         
+         
+         <div class="modal-content">
+         <div class="modal-header">
+         <h3 class="modal-title">Fill Details</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+         
+         </div>
+         <div class="modal-body">
+            <!-- <form method="post" class="form-inline"> -->
+                <div class="form-group">
+                    <label for="nm"><b>Name:></b></label>
+                    <input id="nm" type="text" name="nm" class="form-control">
+                </div><br>
+                <div class="form-group">
+                    <label for="mob"><b>Mobile no:></b></label>
+                    <input id="mob" type="mobile" name="mob" class="form-control">
+                </div><br>
+                <div class="form-group"></div>
+                    <label for="em"><b>Email:></b></label>
+                    <input id="Em" type="Email" name="em" class="form-control">
+                </div>   
+         </div>
+         <div class="modal-footer">
+            <input type="submit" name="bton" data-dismiss="modal" class="form-control btn btn-info ">
+            <button type="button" class="btn btn-default" data-dismiss="modal"><b>Close</b></button>
+         </div>
+         </div>
+         
+         </div>
+         </div>
+         
+        </div>
+</body>
+</html
